@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: azure;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    margin-top: 1rem;
+    text-align: center;
+}
+main {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#control {
+    padding: 1rem;
+    margin-right: 3rem;
+}
+#color-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#color-input::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+#color-input::-webkit-color-swatch {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.button {
+    outline: none;
+    border: 1px solid #404040;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button-active {
+    background-color: #202020;
+    color: #fff;
+    border: none;
+}
+
+#grid-size-input {
+    margin-top: 2rem;
+    -webkit-appearance: none;
+    width: 150px;
+    cursor: pointer;
+}
+#grid-size-input::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid #404040;
+    border-radius: 5px;
+}
+#grid-size-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-top: -7px;
+    background-color: #202020;
+}
+.grid-size {
+    margin-top: 1rem;
+}
+
+.grid {
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: repeat(16, 1fr) !important;
+    grid-template-rows: repeat(16, 1fr) !important;
+    border: 2px solid #404040;
+    background-color: #fff;
+}
+.grid-element {
+
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}

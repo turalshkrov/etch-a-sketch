@@ -2,14 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="desciption" content="eatch-a-sketch">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="turalshkrov">
     <link rel="icon" href="./assets/img/icon.png">
     <link rel="stylesheet" href="./assets/style/style.css">
-    <title>Etch-a-Sketch</title>
+    <title>Etch-a-sketch</title>
 </head>
 <body>
-    
+    <header>
+        <div class="title">
+            <h1>Etch-a-sketch</h1>
+        </div>
+    </header>
+    <main>
+        <div id="control">
+            <input type="color" name="color" id="color-input" value="#202020">
+            <div class="buttons">
+                <button class="button button-active" id="color-btn">
+                    Color
+                </button>
+                <button class="button" id="rainbow">
+                    Rainbow
+                </button>
+                <button class="button" id="eraser">
+                    Eraser
+                </button>
+                <button class="button" id="clear">
+                    Clear
+                </button>
+            </div>
+            <input type="range" name="grid-size" id="grid-size-input" min="1" max="64" value="16">
+            <div class="grid-size">
+                16 x 16
+            </div>
+        </div>
+        <div id="grid" class="grid">
+            
+        </div>
+    </main>
+    <footer>
+        <p>Github: <a href="https://github.com/turalshkrov" target="_blank">turalshkrov</a></p>
+    </footer>
     <script src="./app.js"></script>
 </body>
 </html>
