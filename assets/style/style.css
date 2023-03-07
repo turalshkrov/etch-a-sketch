@@ -59,6 +59,9 @@ main {
     flex-direction: column;
     margin-top: 1rem;
 }
+#clear {
+    width: 100%;
+}
 .button {
     outline: none;
     border: 1px solid #404040;
@@ -74,18 +77,18 @@ main {
     border: none;
 }
 
-#grid-size-input {
+#size-input {
     margin-top: 2rem;
     -webkit-appearance: none;
     width: 150px;
     cursor: pointer;
 }
-#grid-size-input::-webkit-slider-runnable-track {
+#size-input::-webkit-slider-runnable-track {
     height: 10px;
     border: 1px solid #404040;
     border-radius: 5px;
 }
-#grid-size-input::-webkit-slider-thumb {
+#size-input::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 24px;
     height: 24px;
@@ -105,9 +108,6 @@ main {
     grid-template-rows: repeat(16, 1fr) !important;
     border: 2px solid #404040;
     background-color: #fff;
-}
-.grid-element {
-
 }
 
 footer {

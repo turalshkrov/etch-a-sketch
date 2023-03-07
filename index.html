@@ -19,8 +19,8 @@
     <main>
         <div id="control">
             <input type="color" name="color" id="color-input" value="#202020">
-            <div class="buttons">
-                <button class="button button-active" id="color-btn">
+            <div class="buttons" id="buttons">
+                <button class="button button-active" id="color">
                     Color
                 </button>
                 <button class="button" id="rainbow">
@@ -29,11 +29,11 @@
                 <button class="button" id="eraser">
                     Eraser
                 </button>
-                <button class="button" id="clear">
-                    Clear
-                </button>
             </div>
-            <input type="range" name="grid-size" id="grid-size-input" min="1" max="64" value="16">
+            <button class="button" id="clear">
+                Clear
+            </button>
+            <input type="range" name="grid-size" id="size-input" min="1" max="64" value="16">
             <div class="grid-size">
                 16 x 16
             </div>
