@@ -96,7 +96,7 @@ main {
     margin-top: -7px;
     background-color: #202020;
 }
-.grid-size {
+#grid-size {
     margin-top: 1rem;
 }
 
@@ -104,8 +104,6 @@ main {
     display: grid;
     width: 400px;
     height: 400px;
-    grid-template-columns: repeat(16, 1fr) !important;
-    grid-template-rows: repeat(16, 1fr) !important;
     border: 2px solid #404040;
     background-color: #fff;
 }
